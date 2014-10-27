@@ -33,6 +33,7 @@ body {
 }
 ol, ul {
 	list-style: none;
+	display: inline-block;
 }
 blockquote, q {
 	quotes: none;
@@ -46,8 +47,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+	text-decoration: none;
+	color:inherit;
+}
 /*End of CSS Reset*/
 
 body{
-	font-family: 'Monserrat', Helvetica, sans-serif;
+	font-family: 'Montserrat',Helvetica, sans-serif;
+	width: 100%; /* Use relative widths only!! avoid fixed width so that mobile doesn't render weird*/
+	
+}
+
+.background{
+	width:100%;
+	line-height:2.0em;
+	vertical-align: middle;
+	background-color: #230000;
+	color:white;
+	font-size: 0.75em;
 }
