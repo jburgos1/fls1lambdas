@@ -1,4 +1,6 @@
-
+ul,ol{
+	list-style: none;
+}
 
 /* Header */
 .navbar-brand {
