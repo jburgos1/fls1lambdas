@@ -1,6 +1,18 @@
 /* Header */
+.navbar-brand {
+	padding: 0;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#logo {
+	margin: 0;
+	padding: 0;
+}
+
 #head { 
-	background:#181015 url( ../images/bg_header.jpg) no-repeat; background-size: cover; min-height:520px; 
+	background:#181015 url( ../img/aa_1.png) no-repeat; background-size: cover; min-height:520px; 
+	background-position: 25% 25%;
 	text-align: center; 
 	padding-top:240px; 
 	color:white; 
@@ -110,10 +122,15 @@ img.pull-left { margin-right: 10px; }
 	.sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; } 
 
 /* Footer */
-.footer1 { background: #232323; padding: 30px 0 0 0; font-size: 12px; color: #999; }
+
+.simplenav {
+	text-align: center;
+}
+
+.footer1 { background: #232323; padding: 10px 0 0 0; font-size: 12px; color: #999; }
 	.footer1 a { color: #ccc; }
 		.footer1 a:hover {color: #fff; }
-	.footer1 .widget { margin-bottom:30px; }		
+	.footer1 .widget { margin-bottom:5px; }		
 	.footer1 .widget-title { font-size: 17px; font-weight: bold; color: #ccc; margin: 0 0 20px; }
 	.footer1 .entry-meta { 
 		border-top: 1px solid #ccc; 
