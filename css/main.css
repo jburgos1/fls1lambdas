@@ -38,8 +38,12 @@ body {
 }
 
 #logo {
-	margin: 0;
+	margin: 1% 0 0 0;
 	padding: 0;
+}
+
+.active {
+	background-color: #FF0000;
 }
 
 #head { 
