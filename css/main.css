@@ -42,6 +42,23 @@ body {
 	color: #FFFFFF;
 }
 
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: #FFFFFF;
+	color: #78431B;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(235,235,235,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0 );
+}
+
+ul.nav.navbar-nav.pull-right {
+	margin-top: 6px;
+}
+
 #logo {
 	margin: 1% 0 0 0;
 	padding: 0;
@@ -139,13 +156,14 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 { font-family: 'PT Sans', sans-serif; }
+p { font-family: 'Open Sans', sans-serif; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; } 
 blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
 label { color: #777; }
 .thin { font-weight:300; font-family: 'PT Sans', sans-serif; color:#78431B; }
 .page-title { margin-top:20px; font-weight:300; }
 .text-muted { color:#78431B; font-family: 'PT Sans', sans-serif; }
-.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
+.breadcrumb { background:none; padding:0; margin:100px 0 0px 0; }
 ul.list-spaces li{ margin-bottom:10px; }
 
 /* Helpers */
