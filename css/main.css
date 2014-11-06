@@ -17,6 +17,7 @@ body {
 	background: url(../img/texture.png) repeat;
 }
 
+
 /* Header */
 .navbar-brand {
 	padding: 0;
@@ -37,6 +38,10 @@ body {
 	border-width: 0 0 1px;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+	color: #FFFFFF;
+}
+
 #logo {
 	margin: 1% 0 0 0;
 	padding: 0;
@@ -47,7 +52,7 @@ body {
 }
 
 #head { 
-	background:#181015 url( ../img/aa_2.png) no-repeat; background-size: cover; min-height:520px; 
+	background:#181015 url( ../img/aa_3.png) no-repeat; background-size: cover; min-height:520px; 
 	background-position: 25% 25%;
 	text-align: center; 
 	padding-top:240px; 
@@ -63,15 +68,21 @@ body {
 }
 
 	#head .lead { 
-		font-family:"Open sans", Helvetica, Arial; 
-		font-size:44px; 
+		font-family: 'PT Sans', sans-serif;
+		font-size:50px; 
 		margin-bottom:6px; 
-		color:white; 
+		color:#FFFFFF; 
 		line-height:1.15em; 
+		letter-spacing: 0.0625em;
+		/*text-shadow: 1px 1px 6px #FFFFFF;*/
 	} 
 	#head .tagline { 
-		color:rgba(255,255,255,0.75); 
+		font-family: 'PT Sans', sans-serif;
+		color:#FFFFFF; 
+		font-size: 20px;
 		margin-bottom:25px; 
+		letter-spacing: 0.02em;
+		/*text-shadow: 1px 1px 6px #FFFFFF;*/
 	}
 		#head .tagline a { color:#fff; 
 		} 
@@ -127,13 +138,13 @@ body {
 
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
+h1, h2, h3, h4, h5, h6 { font-family: 'PT Sans', sans-serif; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; } 
 blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
 label { color: #777; }
-.thin { font-weight:300; }
+.thin { font-weight:300; font-family: 'PT Sans', sans-serif; color:#78431B; }
 .page-title { margin-top:20px; font-weight:300; }
-.text-muted { color:#888; }
+.text-muted { color:#78431B; font-family: 'PT Sans', sans-serif; }
 .breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
 ul.list-spaces li{ margin-bottom:10px; }
 
