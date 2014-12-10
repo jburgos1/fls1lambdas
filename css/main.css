@@ -113,19 +113,19 @@ ul.nav.navbar-nav.pull-right {
 	}
 	#head .btn-default { 
 		text-shadow: none; 
-		background:transparent; 
-		color:rgba(255,255,255,.5); 
+		background:#512D1E; 
+		color:rgba(255,255,255,1); 
 		-webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
 		-moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
 		box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
-		background: transparent; }
+		}
 		#head .btn-default:hover,
 		#head .btn-default:focus { 
-			color:rgba(255,255,255,.8); 
+			color:#512D1E; 
 			-webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
 			-moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
 			box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
-			background: transparent; }
+			background: white; }
 		#head .btn-default:active, 
 		#head .btn-default.active { 
 			color:#fff; 
