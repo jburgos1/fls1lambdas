@@ -45,15 +45,44 @@ body {
 .navbar-inverse .navbar-nav>.active>a{
 	background-color: #FFFFFF;
 	color: #78431B;
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover{
+	color: #78431B;
+}
+
+.navbar-inverse .navbar-nav>.open>a{
+	background-color: #643614;
+	color: #FFFFFF; 
+}
+
+
+.navbar-inverse .navbar-nav>.open>a:hover{
+	background-color: #643614;
+	color: #FFFFFF; 
+}
+
+.navbar-inverse .navbar-nav>.open>a:focus{
+	background-color: #643614;
+	color: #FFFFFF; 
+}
+
+.dropdown-menu>li>a{
+	color: #78431B;
+
+}
+
+.dropdown-menu>li>a:hover{
+	color: #78431B;
 }
 
 ul.nav.navbar-nav.pull-right {
@@ -61,7 +90,7 @@ ul.nav.navbar-nav.pull-right {
 }
 
 #logo {
-	margin: 1% 0 0 0;
+	margin: 5% 0 0 0;
 	padding: 0;
 }
 
