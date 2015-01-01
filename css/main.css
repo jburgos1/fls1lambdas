@@ -35,14 +35,19 @@ body {
 	background: linear-gradient(to bottom,  rgba(81,45,30,1) 0%,rgba(81,45,30,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512d1e', endColorstr='#512d1e',GradientType=0 ); /* IE6-9 */
 	border-bottom: solid 1px #643614;
+	text-shadow: none;
 
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: #FFFFFF;
+	color: #FFFFFF;		
+	text-shadow: none;
 }
 
 .navbar-inverse .navbar-nav>.active>a{
+	box-shadow: none;
+	text-shadow: none;
+	-webkit-box-shadow: none;
 	background-color: #FFFFFF;
 	color: #78431B;
 	background: rgb(255,255,255); /* Old browsers */
