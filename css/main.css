@@ -112,6 +112,24 @@ ul.nav.navbar-nav.pull-right {
 	font-weight:300; 
 }
 
+#chapter_header {
+	width: 100%;
+	padding-top: 5%;
+}
+
+@media (max-width: 767px) {
+	#chapter_header {
+		display: none;
+	}
+}
+
+.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+.ig-b-v-24 { width: 137px; height: 24px; background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+.ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }
+
 #home_logo {
 	max-width: 75%;
 }
@@ -249,6 +267,10 @@ label { color: #777; }
 .breadcrumb { background:none; padding:0; margin:100px 0 0px 0; }
 .breadcrumb li a { color: #78431B;}
 ul.list-spaces li{ margin-bottom:10px; }
+
+#ch_crumb {
+	margin-top: 20px;
+}
 
 /* Helpers */
 .container-full { margin: 0 auto; width: 100%; }
