@@ -418,6 +418,10 @@ a:focus, a:hover {
 	color: #643614;
 }
 
+.panel-title a:focus {
+	color: #FFFFFF;
+}
+
 .chapter_contact {
 	padding-left: 15px;
 }
