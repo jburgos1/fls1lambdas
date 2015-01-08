@@ -244,53 +244,7 @@
 	</div>	<!-- /container -->
 	
 
-	<footer id="footer" class="top-space">
-		<div class="footer1">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 widget">
-						<div class="widget-body">
-							<p class="simplenav">
-								<a href="../index.html">Home</a> | 
-								<a href="../Florida-Sector-One-History.html">History</a> |
-								<a href="../Florida-Sector-One-Executive-Board.html">Who We Are</a> |
-								<a href="../Contact-Florida-Sector-One.html">Contact</a> |
-								<a href="../Donate-To-Florida-Sector-One.html">Donate</a>
-							</p>
-						</div>
-					</div>
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="follow-me-icons">
-								<a target="_blank" href="http://www.facebook.com/FLS1Lambdas">
-									<i class="fa fa-facebook fa-2"></i>
-								</a>
-								<a target="_blank" href="http://www.instagram.com/FLS1_Lambdas">
-									<i class="fa fa-instagram fa-2"></i>
-								</a>
-							</p>	
-						</div>
-					</div>
-
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="text-right">
-								Designed by <a target="_blank" href="http://www.jmugz3.com/" rel=""> Jose Mugaburu</a> &amp; <a target="_blank" href="http://juan-burgos.com" rel=""> Juan Burgos</a><br />
-								Copyright &copy; 2015 | <a target="_blank" href="http://www.lambda1975.org/">Lambda Theta Phi Latin Fraternity, Inc.</a>
-							</p>
-						</div>
-					</div>
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-	</footer>	
+	<div id="footer"></div>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -311,5 +265,12 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
+
+	<script> 
+		$(function(){
+		  $("#footer").load("../includes/chapter_footer.html"); 
+		});
+	</script> 
+	
 </body>
 </html>
