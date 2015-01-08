@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="fonts/font-awesome.min.css">
 
 	<!-- Icon -->
-	<link rel="shortcut icon" href="#">
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
@@ -32,6 +32,10 @@
 </head>
 
 <body>
+
+	<!-- Google Analytics Tracking -->
+	<?php include_once("includes/analyticstracking.php") ?>
+	
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top headroom">
 		<div class="container" id="topmenu">
@@ -50,47 +54,59 @@
 							Home
 						</a>
 					</li>
+
 					<li>
 						<a href="history.html">
 							History
 						</a>
 					</li>
+					
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							Who We Are <b class="caret"></b>
 						</a>
+						
 						<ul class="dropdown-menu">
+							
 							<li>
 								<a href="eboard.html">
 									Executive Board
 								</a>
+							
 							</li>
+							
 							<li role="presentation" class="divider"></li>
+							
 							<li>
 								<a href="chapters/phi.html">
 									Phi Chapter (UF)
 								</a>
 							</li>
+							
 							<li>
 								<a href="chapters/aa.html">
 									Alpha Alpha (UCF)
 								</a>
 							</li>
+							
 							<li>
 								<a href="chapters/apsi.html">
 									Alpha Psi (USF)
 								</a>
 							</li>
+							
 							<li>
 								<a href="chapters/betadelta.html">
 									Beta Delta (ERAU)
 								</a>
 							</li>
+							
 							<li>
 								<a href="chapters/betaiota.html">
 									Beta Iota (FSU)
 								</a>
 							</li>
+							
 							<li>
 								<a href="chapters/lambdabeta.html">
 									Alumni
@@ -98,19 +114,28 @@
 							</li>
 						</ul>
 					</li>
+
 					<li>
 						<a href="">
 							Events
 						</a>
 					</li>
+					
 					<li class="active">
 						<a href="../contact.html">
 							Contact
 						</a>
 					</li>
+					
 					<li>
 						<a class="btn" href="donate.html">
 							Donate
+						</a>
+					</li>
+
+					<li>
+						<a href="http://quest.lambda1975.org/" target="_blank">
+							The Quest
 						</a>
 					</li>
 				</ul>
@@ -128,8 +153,15 @@
 	<div class="container">
 
 		<ol class="breadcrumb">
-			<li><a href="index.html">Home</a></li>
-			<li class="active">About</li>
+			<li>
+				<a href="index.html">
+					Home
+				</a>
+			</li>
+			
+			<li class="active">
+				Contact
+			</li>
 		</ol>
 
 		<div class="row">
@@ -137,14 +169,23 @@
 			<!-- Article main content -->
 			<article class="col-sm-9 maincontent">
 				<header class="page-header">
-					<h1 class="page-title">Contact us</h1>
+					<h1 class="page-title">
+						Contact Florida Sector One
+					</h1>
+
+					<h3>
+						Let's talk!
+					</h3>
 				</header>
 				
 				<p>
-					Interested in learning more about our brotherhood? Interested in joining the Leaders of the Latino Greek Movement? </p>
-				<p>Send us a few lines, and we will gladly provide with your information.
+					If you have any questions regarding Lambda Theta Phi Latin Fraternity, Inc. at your school, want to bring Lambda to your campus, or just want to say hello; don't hesitate to contact us! We'd love to hear from you!
 				</p>
-				<br>
+				
+				<p>
+					We exist to promote the spirit of brotherhood, to protect the rights of Latino students on their quest for education, to promote culture, and to maximize leadership in our communities. Send us a few lines, and we will gladly provide with your requested information.
+				</p>
+
 					<form>
 						<div class="row">
 							<div class="col-sm-4">
@@ -208,11 +249,11 @@
 					<div class="col-md-12 widget">
 						<div class="widget-body">
 							<p class="simplenav">
-								<a href="#">Home</a> | 
-								<a href="about.html">History</a> |
-								<a href="#">Who We Are</a> |
-								<a href="#">Events</a> |
-								<a href="contact.html">Contact</a>
+								<a href="index.html">Home</a> | 
+								<a href="Florida-Sector-One-History.html">History</a> |
+								<a href="Florida-Sector-One-Executive-Board.html">Who We Are</a> |
+								<a href="Contact-Florida-Sector-One.html">Contact</a> |
+								<a href="Donate-To-Florida-Sector-One.html">Donate</a>
 							</p>
 						</div>
 					</div>
@@ -224,16 +265,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 widget">
-						<!--
-						<h3 class="widget-title">Follow FLS1</h3> 
-						-->
 						<div class="widget-body">
 							<p class="follow-me-icons">
-								<!-- 								
-								<a href=""><i class="fa fa-twitter fa-2"></i></a>
-								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
-								<a href=""><i class="fa fa-github fa-2"></i></a> 
-								-->
 								<a target="_blank" href="http://www.facebook.com/FLS1Lambdas">
 									<i class="fa fa-facebook fa-2"></i>
 								</a>
@@ -247,15 +280,15 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="text-right">
-								Copyright &copy; 2014 | Lambda Theta Phi Latin Fraternity, Inc. <br />
-								Designed by <a href="http://www.jmugz3.com/" rel="designer"> Jose Mugaburu</a> &amp <a href="http://juan-burgos.com" rel="designer"> Juan Burgos </a> 
+								Designed by <a target="_blank" href="http://www.jmugz3.com/" rel=""> Jose Mugaburu</a> &amp; <a target="_blank" href="http://juan-burgos.com" rel=""> Juan Burgos</a><br />
+								Copyright &copy; 2014 | <a target="_blank" href="http://www.lambda1975.org/">Lambda Theta Phi Latin Fraternity, Inc.</a>
 							</p>
 						</div>
 					</div>
 				</div> <!-- /row of widgets -->
 			</div>
 		</div>
-	</footer>	
+	</footer>
 		
 
 
