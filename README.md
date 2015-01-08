@@ -1,4 +1,4 @@
-floridalambdas.com
+FloridaLambdas.com
 ===========
 The website belongs to the Florida Sector 1 of 
 Lambda Theta Phi Latin Fraternity, Inc.
@@ -14,8 +14,8 @@ Site Sections:
 	- Executive Board
 	- Undergraduate Chapters
 	- Alumni Chapters
-- **Events**
 - **Contact**
 - **Donation**
+- - **The Quest**
 
-
+&copy; 2015 Lambda Theta Phi Latin Fraternity, Inc.
