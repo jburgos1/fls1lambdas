@@ -2,9 +2,7 @@ FloridaLambdas.com
 ===========
 This website belongs to the Florida Sector 1 of Lambda Theta Phi Latin Fraternity, Inc.
 
-Built on Twitter Bootstrap Framework (check out http://getbootstrap.com!)
-
-Site Sections:
+Site Map:
 --------------
 
 - **Home**
@@ -17,13 +15,22 @@ Site Sections:
 - **Donation**
 - **The Quest**
 
+Framework
+===========
+Built on Twitter Bootstrap Framework (check out http://getbootstrap.com!)
+
+Progressus - Free business/corporate Bootstrap template
+--------------
+Progressus is a free, responsive, nice-looking business template based on Bootstrap HTML/CSS framework.
+- Design and development: **Sergey Pozhilov** - http://pozhilov.com
+
 Developers/Designers
 ===========
-Juan Burgos
-- www.Juan-Burgos.com
+- Juan Burgos
+	- www.Juan-Burgos.com
 
-Jose Mugaburu
-- http://jmugz3.com/
+- Jose Mugaburu
+	- http://jmugz3.com/
 
 Copyright
 ===========
