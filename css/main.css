@@ -247,6 +247,11 @@ h4 a, h4 a:hover {
 	text-decoration: underline;
 }
 
+h3 a {
+	color: #643614;
+	text-decoration: underline;
+}
+
 p { font-family: 'Open Sans', sans-serif; font-size: 14px; color: #643614;}
 
 p a {
