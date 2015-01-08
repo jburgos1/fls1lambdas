@@ -15,45 +15,147 @@
 		</changefreq>
 		
 		<priority>
-			0.9
+			1
 		</priority>
 	</url>
 	
 	<url>
 		<loc>
-			http://www.domain.com/catalog?item=vacation_hawaii
+			http://www.floridalambdas.com/Florida-Sector-One-History.html
 		</loc>
 		
 		<changefreq>
 			yearly
 		</changefreq>
+
+		<priority>
+			
+		</priority>
 	</url>
-	
+
 	<url>
 		<loc>
-			http://www.domain.com/catalog?item=vacation_new_zealand
+			http://www.floridalambdas.com/Florida-Sector-One-Executive-Board.html
 		</loc>
-		
-		<lastmod>
-			2008-12-23
-		</lastmod>
 		
 		<changefreq>
 			yearly
 		</changefreq>
+
+		<priority>
+			
+		</priority>
 	</url>
-	
+
 	<url>
 		<loc>
-			http://www.domain.com/catalog?item=vacation_new_zealand
+			http://www.floridalambdas.com/Chapters/Phi-Chapter.html
 		</loc>
-		
-		<lastmod>
-			2008-12-23
-		</lastmod>
 		
 		<changefreq>
 			yearly
 		</changefreq>
+
+		<priority>
+			
+		</priority>
+	</url>
+
+	<url>
+		<loc>
+			http://www.floridalambdas.com/Chapters/Alpha-Alpha-Chapter.html
+		</loc>
+		
+		<changefreq>
+			yearly
+		</changefreq>
+
+		<priority>
+			
+		</priority>
+	</url>
+
+	<url>
+		<loc>
+			http://www.floridalambdas.com/Chapters/Alpha-Psi-Chapter.html
+		</loc>
+		
+		<changefreq>
+			yearly
+		</changefreq>
+
+		<priority>
+			
+		</priority>
+	</url>
+
+	<url>
+		<loc>
+			http://www.floridalambdas.com/Chapters/Beta-Delta-Chapter.html
+		</loc>
+		
+		<changefreq>
+			yearly
+		</changefreq>
+
+		<priority>
+			
+		</priority>
+	</url>
+
+	<url>
+		<loc>
+			http://www.floridalambdas.com/Chapters/Beta-Iota-Chapter.html
+		</loc>
+		
+		<changefreq>
+			yearly
+		</changefreq>
+
+		<priority>
+			
+		</priority>
+	</url>
+
+	<url>
+		<loc>
+			http://www.floridalambdas.com/Chapters/Lambda-Beta-Alumni-Chapter.html
+		</loc>
+		
+		<changefreq>
+			yearly
+		</changefreq>
+
+		<priority>
+			
+		</priority>
+	</url>
+
+	<url>
+		<loc>
+			http://www.floridalambdas.com/Contact-Florida-Sector-One.html
+		</loc>
+		
+		<changefreq>
+			yearly
+		</changefreq>
+
+		<priority>
+			
+		</priority>
+	</url>
+
+	<url>
+		<loc>
+			http://www.floridalambdas.com/Donate-To-Florida-Sector-One=.html
+		</loc>
+		
+		<changefreq>
+			yearly
+		</changefreq>
+
+		<priority>
+			
+		</priority>
 	</url>
 </urlset>
