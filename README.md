@@ -1,6 +1,6 @@
 FloridaLambdas.com
 ===========
-This website belongs to the Florida Sector 1 of Lambda Theta Phi Latin Fraternity, Inc.
+This website belongs to the Florida Sector 1 of Lambda Theta Phi Latin Fraternity, Inc. Lambda Theta Phi Latin Fraternity, Inc., the First and Largest Latin Fraternity in the Nation, is a Latino-based fraternity dedicated to assisting the minority and Latino community in the US.
 
 Site Map:
 --------------
