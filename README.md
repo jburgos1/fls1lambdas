@@ -9,8 +9,12 @@ Site Map:
 - **History**
 - **Who We Are**
 	- Executive Board
-	- Undergraduate Chapters
-	- Alumni Chapters
+	- Phi Chapter
+	- Alpha Alpha Chapter
+	- Alpha Psi Chapter
+	- Beta Delta Chapter
+	- Beta Iota Chapter
+	- Lambda Beta (Alumni) Chapter
 - **Contact**
 - **Donation**
 - **The Quest**
