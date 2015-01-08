@@ -81,6 +81,10 @@ body {
 	color: #FFFFFF; 
 }
 
+.navbar-inverse .navbar-nav>.open>a:focus{
+	color: #643614;
+}
+
 .dropdown-menu>li>a{
 	color: #78431B;
 
