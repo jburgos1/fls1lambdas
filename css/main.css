@@ -82,7 +82,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav>.open>a:focus{
-	color: #643614;
+	color: #FFFFFF;
 }
 
 .dropdown-menu>li>a{
@@ -92,6 +92,14 @@ body {
 
 .dropdown-menu>li>a:hover{
 	color: #78431B;
+}
+
+#who a {
+	color: #634614;
+}
+
+#who a:focus {
+	color: #634614;
 }
 
 ul.nav.navbar-nav.pull-right {
