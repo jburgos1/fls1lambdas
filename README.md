@@ -34,7 +34,7 @@ Developers/Designers
 	- www.Juan-Burgos.com
 
 - Jose Mugaburu
-	- http://jmugz3.com/
+	- www.jmugz3.com/
 
 Copyright
 ===========
