@@ -21,8 +21,6 @@ $(document).ready(function(){
     var phone = document.getElementById("phone");
     var message = document.getElementById("message");
 
-    var validate = ValidateEmptyAndNull(name,email,phone,message);
-
     //Assert that Button exists
 	var send = document.getElementById("btn-contact");
 
@@ -31,7 +29,7 @@ $(document).ready(function(){
         send.onclick = function () {
                 this.value = '...Sending';
                 this.style("border-color:#512D1E;");
-
+                var validate = ValidateEmptyAndNull(name,email,phone,message);
 				if (validate == true){
 					sendForm();
 				}
