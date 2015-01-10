@@ -106,17 +106,23 @@ body { background-color: #FFFFFF; }
 	.active { background-color: #fff;}
 
 
-	@media (min-width: 767px){
+	@media (min-width: 1224px) {
 		#nav_menu {
 			float: right;
 		}		
+	}
+
+	@media (min-width: 768px) {
+		#nav_menu{
+			float: right;
+		}
 	}
 
 	.navbar-inverse .navbar-nav>.active>a:hover{ color: #78431B;}
 
 	.navbar-inverse .navbar-nav>.open>a{ background-color: #643614; color: #FFFFFF; }
 
-	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a { color: #FFFFFF;}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a { color: #643614; background-color: #FFFFFF; }
 
 	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { background-color: #643614;}
 
@@ -140,6 +146,7 @@ body { background-color: #FFFFFF; }
 
 	.active { background-color: #fff;}
 
+	.navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: #FFFFFF; }
 
 /* End Header Styling */
 
