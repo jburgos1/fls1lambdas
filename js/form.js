@@ -5,23 +5,21 @@ $(document).ready(function(){
      
     // Create the supports object
     var supports = {};
-
     supports.autofocus = 'autofocus' in input;
     supports.required    = 'required' in input;
     supports.placeholder = 'placeholder' in input;
  
-    // Fallback for autofocus attribute
+    // Fallback for attributes
     if(!supports.autofocus) {
     }
-     
-    // Fallback for required attribute
+   
     if(!supports.required) {
     }
  
-    // Fallback for placeholder attribute
     if(!supports.placeholder) {
     }
 
+    //Assert that Button exists
 	var send = document.getElementById("btn-contact");
 
 	if(send) {
@@ -35,10 +33,10 @@ $(document).ready(function(){
 					//Form is validated and can be sent
 				}
 				else{
-					//don't send anything.
+					var error = document.getElementById("error");
+					error.innerHTML("Your message was not sent");
+					this.value = 'Send message';
 				}
-        }
-        this.value = 'Send message'
     }
 
     function checkForm(){
@@ -48,9 +46,10 @@ $(document).ready(function(){
     	var message = document.getElementById("message");
 
     	//Name Validation
-    	if (name == "")
+    	if (name == "" || name = null)
     	{
-    		name.style.css("border-shadow:red;")
+    		name.css("border:red;");
+    		return false;
     	}
 
     	//Email Validation
@@ -60,7 +59,7 @@ $(document).ready(function(){
     	//Message
     	
 
-    	return false
+    	return true;
     };
 
 
