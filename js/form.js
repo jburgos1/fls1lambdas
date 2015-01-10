@@ -45,27 +45,27 @@ $(document).ready(function(){
     function ValidateEmptyAndNull(_name, _email,_phone,_message){
 
     	//Name Validation
-    	if(_name.value ==  null || _name.length = 0)
+    	if(_name ==  null || _name.length = 0)
     	{
     		error.innerHTML("There is an error with your fields");
     		return false;
     	}
    
     	//Email Validation
-    	if(_email.value == null || _email.length = 0)
+    	if(_email == null || _email.length = 0)
 		{
 			error.innerHTML("There is an error with your fields");
 			return false;
 		}
 
     	//Phone Validation
-    	if (_phone.value == null || _phone.length = 0)
+    	if (_phone == null || _phone.length = 0)
     	{
     		error.innerHTML("There is an error with your fields");
     		return false;
     	}
     	//Message
-    	if (_message.value == null || _message.length = 0 )
+    	if (_message == null || _message.length = 0 )
     	{
     		error.innerHTML("There is an error with your fields");
     		return false;
