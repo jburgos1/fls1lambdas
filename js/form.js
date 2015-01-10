@@ -1,7 +1,4 @@
-$(document).ready(function(){
-	var error = document.getElementsByClassName("error");
-	error.value = error.value + " hidden"; 
-	
+$(document).ready(function(){ 
 
 	// Create input element for testing
     var input = document.createElement('input');
@@ -30,6 +27,7 @@ $(document).ready(function(){
 	if(send) {
         send.onclick = function () {
                 this.value = '...Sending';
+                this.css("border-color:#512D1E;")
 			
 				var check = checkForm();
 
