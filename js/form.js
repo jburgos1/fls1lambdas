@@ -46,7 +46,7 @@ $(document).ready(function(){
     	var message = document.getElementById("message");
 
     	//Name Validation
-    	if (name == "" || name = null)
+    	if (name == "" | name = null)
     	{
     		name.css("border:red;");
     		return false;
