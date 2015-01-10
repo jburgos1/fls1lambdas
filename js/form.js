@@ -35,8 +35,8 @@ $(document).ready(function(){
 				else{
 					var error = document.getElementById("error");
 					error.innerHTML("Your message was not sent");
-					this.value = 'Send message';
 				}
+		this.value = 'Send message';
     }
 
     function checkForm(){
