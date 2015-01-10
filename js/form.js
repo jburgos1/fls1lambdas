@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	var error = document.getElementsByClassName("error");
+	error.value = error.value + " hidden"; 
+	
 
 	// Create input element for testing
     var input = document.createElement('input');
