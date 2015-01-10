@@ -50,7 +50,7 @@ body { background-color: #FFFFFF; }
 
 	}
 
-<<<<<<< HEAD
+
 	.navbar-inverse .navbar-nav>.active>a:hover{
 		color: #78431B;
 	}
@@ -75,9 +75,9 @@ body { background-color: #FFFFFF; }
 	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 		background-color: #643614;
 	}
-=======
+
 	.navbar-inverse .navbar-nav>.active>a:hover{ color: #78431B;}
->>>>>>> FETCH_HEAD
+
 
 	.navbar-inverse .navbar-nav>.open>a{ background-color: #643614; color: #FFFFFF; }
 
@@ -111,6 +111,35 @@ body { background-color: #FFFFFF; }
 			float: right;
 		}		
 	}
+
+	.navbar-inverse .navbar-nav>.active>a:hover{ color: #78431B;}
+
+	.navbar-inverse .navbar-nav>.open>a{ background-color: #643614; color: #FFFFFF; }
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a { color: #FFFFFF;}
+
+	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { background-color: #643614;}
+
+	.navbar-inverse .navbar-nav>.open>a:hover{ background-color: #643614; color: #FFFFFF;}
+
+	.navbar-inverse .navbar-nav>.open>a:focus{ background-color: #643614; color: #FFFFFF; }
+
+	.navbar-inverse .navbar-toggle { border: none; margin: 5%;}
+
+	.navbar-inverse .navbar-nav>.open>a:focus{ color: #FFFFFF;}
+
+	.dropdown-menu>li>a{ color: #78431B; }
+		.dropdown-menu>li>a:hover{ color: #78431B;}
+
+	#who a { color: #634614; }
+		#who a:focus { color: #634614;}
+
+	ul.nav.navbar-nav.pull-right { margin-top: 6px;}
+
+	#logo { margin: 5% 0 0 5%; padding: 0;}
+
+	.active { background-color: #fff;}
+
 
 /* End Header Styling */
 
@@ -302,9 +331,15 @@ img.pull-left { margin-right: 10px; margin-top: 5px;}
 .jumbotron { margin-bottom: 0; background-color: #FFFFFF; padding-top: 0;}
 	.jumbotron p { font-size: 14px; color: #643614; margin-bottom: 5%;}
 	.jumbotron p a { color:#78431B;}
+<<<<<<< HEAD
 
 #link { margin-bottom: 10%;}
 
+=======
+
+#link { margin-bottom: 10%;}
+
+>>>>>>> FETCH_HEAD
 #fraternalFather { text-decoration: none;}
 
 /* Sidebars */
@@ -357,9 +392,15 @@ a:focus, a:hover { color: #643614;}
 .panel-title a:focus { color: #FFFFFF; }
 
 .chapter_contact { padding-left: 15px;}
+<<<<<<< HEAD
 
 .chapter_contact li { margin-bottom: 5%;}
 
+=======
+
+.chapter_contact li { margin-bottom: 5%;}
+
+>>>>>>> FETCH_HEAD
 #myChart { margin-left: 20%; margin-right: 20%;}
 
 .footer1 { background: #643614; padding: 10px 0 0 0; font-size: 12px; color: #999; 	border-top: #FFFFFF solid 1px;}
