@@ -10,59 +10,75 @@ $(document).ready(function(){
     supports.placeholder = 'placeholder' in input;
  
     // Fallback for attributes
-    if(!supports.autofocus) {
-    }
-   
-    if(!supports.required) {
-    }
- 
-    if(!supports.placeholder) {
-    }
+    if(!supports.autofocus) {}   
+    if(!supports.required) {}
+    if(!supports.placeholder) {}
+
+
+    //name Validation
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var phone = document.getElementById("phone");
+    var message = document.getElementById("message");
+
+    var validate = ValidateEmptyAndNull(name,email,phone,message);
 
     //Assert that Button exists
 	var send = document.getElementById("btn-contact");
 
-	if(send) {
+	if(send) 
+	{
         send.onclick = function () {
                 this.value = '...Sending';
-                this.css("border-color:#512D1E;")
-			
-				var check = checkForm();
+                this.style("border-color:#512D1E;");
 
-				if (check == true){
-					//Form is validated and can be sent
+				if (validate == true){
+					sendForm();
 				}
 				else{
 					var error = document.getElementById("error");
-					error.innerHTML("Your message was not sent");
+					error.innerHTML("Your message was not sent. Please fix the fields.");
 				}
 		this.value = 'Send message';
     }
 
-    function checkForm(){
-    	var name = document.getElementById("name");
-    	var email = document.getElementById("email");
-    	var phone = document.getElementById("phone");
-    	var message = document.getElementById("message");
+    function ValidateEmptyAndNull(_name, _email,_phone,_message){
 
     	//Name Validation
-    	if (name == "" | name = null)
+    	if(_name.value ==  null || _name.length = 0)
     	{
-    		name.css("border:red;");
+    		error.innerHTML("There is an error with your fields");
     		return false;
     	}
-
+   
     	//Email Validation
+    	if(_email.value == null || _email.length = 0)
+		{
+			error.innerHTML("There is an error with your fields");
+			return false;
+		}
 
     	//Phone Validation
-
+    	if (_phone.value == null || _phone.length = 0)
+    	{
+    		error.innerHTML("There is an error with your fields");
+    		return false;
+    	}
     	//Message
-    	
+    	if (_message.value == null || _message.length = 0 )
+    	{
+    		error.innerHTML("There is an error with your fields");
+    		return false;
+    	}
 
     	return true;
     };
 
-
+    function sendForm()
+    {
+    	error.style("color:green;");
+    	error.innerHTML("Your message was sent");
+    }
 
 
 });
