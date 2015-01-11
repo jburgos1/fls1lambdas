@@ -19,7 +19,7 @@
 }
 
 .form-control:not(:focus):invalid{
-	background-color:#FFD9D9;
+	/* background-color:#FFD9D9; */
 }
 
 .form-control:not(:focus):valid{
