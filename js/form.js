@@ -24,12 +24,11 @@ function Validation(){
     var email = document.getElementById("email");
     var phone = document.getElementById("phone");
     var message = document.getElementById("message");
-    var error = document.getElementById("error");
 
-    if (IsAlphaNumeric(name, 'There was an error with your name')){
-    	if(IsEmail(email, 'Please enter a valid e-mail address')){
-    		if(IsNumeric(phone, 'Please enter only number for your phone number')){
-    			if(MinLength(message,'The message must be at least 100 characters')){
+    if (isName(name, 'There was an error with your name')){
+    	if(isEmail(email, 'Please enter a valid e-mail address')){
+    		if(isPhone(phone, 'Please enter only number for your phone number')){
+    			if(minLength(message,'The message must be at least 100 characters')){
     				return true;
     			}
     		}
@@ -41,6 +40,7 @@ function Validation(){
 
 //Sending the form
 var send = document.getElementById("btn-contact");
+var errorSpan = document.getElementById("error");
 
 if(send) {
     send.onclick = function () {
@@ -51,29 +51,37 @@ if(send) {
 	}
 }
 
-
-function IsEmail(email, error){
+function isEmail(email, error){
 	return true;
 };
 
-function IsNumeric(phone, error){
+function isPhone(phone, error){
 	var phoneExpression = /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
-	if(input.value.match(phoneExpression)){
+
+	if(phone.value.match(phoneExpression)){
 		return true;
-	}
-	else{
-		document.getElementById('error').innerHTML = error;
+	} else{
+		//document.getElementById('error').innerHTML = error;
+		errorSpan.innerHTML = error;
 		phone.focus();
 		phone.style.border = "red";
 		return false;
 	}
 }
 
-function IsAlphaNumeric(name, error){
-	return true;
+function isName(name, error){
+	var nameExpression = /^[a-z ,.'-]+$/i;
+	if(name.value.match(nameExpression)){
+		return true;
+	} else{
+		errorSpan.innerHTML = error;
+		name.focus();
+		name.style.border = "red";
+		return false;
+	}
 }
 
-function MinLength(message, error){
+function minLength(message, error){
 	return true;
 }
 
@@ -240,35 +248,31 @@ function formValidation(){
 
 
 	return false;
-
 }
 
 //function that checks whether input text is numeric or not.
-
 function textNumeric(inputtext, alertMsg){
-var numericExpression = /^[0-9]+$/;
-if(inputtext.value.match(numericExpression)){
-	return true;
-}else{
-	document.getElementById('p6').innerText = alertMsg;  //this segment displays the validation rule for zip
-	inputtext.focus();
-	return false;
+	var numericExpression = /^[0-9]+$/;
+	if(inputtext.value.match(numericExpression)){
+		return true;
+	}else{
+		document.getElementById('p6').innerText = alertMsg;  //this segment displays the validation rule for zip
+		inputtext.focus();
+		return false;
+	}
 }
-}
-
 
 //function that checks whether input text is an alphabetic character or not.
-
 function inputAlphabet(inputtext, alertMsg){
-var alphaExp = /^[a-zA-Z]+$/;
-if(inputtext.value.match(alphaExp)){
-	return true;
-}else{
-	document.getElementById('p1').innerText = alertMsg;  //this segment displays the validation rule for name
-	//alert(alertMsg);
-	inputtext.focus();
-	return false;
-}
+	var alphaExp = /^[a-zA-Z]+$/;
+	if(inputtext.value.match(alphaExp)){
+		return true;
+	}else{
+		document.getElementById('p1').innerText = alertMsg;  //this segment displays the validation rule for name
+		//alert(alertMsg);
+		inputtext.focus();
+		return false;
+	}
 }
 
 
