@@ -5,6 +5,11 @@
 
 /*Overriding Bootstrap defaults*/
 
+.error{
+	float:right;
+	color:red;
+}
+
 .form-control{
 	border-color:#512D1E;
 }
@@ -13,7 +18,11 @@
 	border-color:#512D1E;
 }
 
-.error{
-	float:right;
-	color:red;
+.form-control:not(:focus):invalid{
+	background-color:#FFD9D9;
 }
+
+.form-control:not(:focus):valid{
+	background-color:#D9FFD9;
+}
+

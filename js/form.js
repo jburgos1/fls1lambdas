@@ -25,17 +25,17 @@ function Validation(){
     var phone = document.getElementById("phone");
     var message = document.getElementById("message");
 
-    if (isName(name, 'There was an error with your name')){
+    if (isName(name,5,30, 'Your name must be between 5 and 30 characters')){
     	if(isEmail(email, 'Please enter a valid e-mail address')){
     		if(isPhone(phone, 'Please enter only number for your phone number')){
-    			if(minLength(message,'The message must be at least 100 characters')){
+    			if(minLength(message, 100, 'The message must be at least 100 characters')){
     				return true;
     			}
     		}
     	}
     }
     return false;
-}
+});
 
 
 //Sending the form
@@ -47,13 +47,9 @@ if(send) {
             this.value = '...Sending';
             this.style("border-color:#512D1E;");
 			sendMessage();
-	this.value = 'Send message';
 	}
+this.value = 'Send message';
 }
-
-function isEmail(email, error){
-	return true;
-};
 
 function isPhone(phone, error){
 	var phoneExpression = /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
@@ -69,11 +65,18 @@ function isPhone(phone, error){
 	}
 }
 
-function isName(name, error){
+function isEmail(email, error){
+	return true;
+};
+
+function isName(name, min, max, error){
 	var nameExpression = /^[a-z ,.'-]+$/i;
+
 	if(name.value.match(nameExpression)){
 		return true;
-	} else{
+	}else if(name.length >= min && name.length <= max){
+		return true;
+	}else{
 		errorSpan.innerHTML = error;
 		name.focus();
 		name.style.border = "red";
@@ -81,15 +84,21 @@ function isName(name, error){
 	}
 }
 
-function minLength(message, error){
-	return true;
+function minLength(message, min, error){
+	if(message.length <= max && message.length >= min){
+		return	true;
+	}else{
+		errorSpan.innerHTML = error;
+		message.focus();
+		message.style.border= "red";
+	}
 }
 
 function sendForm(){
 	error.style("color:green;");
 	error.innerHTML("Your message was sent");
 }
-});
+
 
 /*
 function validateForm() {
@@ -275,56 +284,53 @@ function inputAlphabet(inputtext, alertMsg){
 	}
 }
 
-
 //function that checks whether input text includes alphabetic and numeric characters.
-
 function textAlphanumeric(inputtext, alertMsg){
-var alphaExp = /^[0-9a-zA-Z]+$/;
-if(inputtext.value.match(alphaExp)){
-	return true;
-}else{
-	document.getElementById('p5').innerText = alertMsg; //this segment displays the validation rule for address
-	inputtext.focus();
-	return false;
-}
+	var alphaExp = /^[0-9a-zA-Z]+$/;
+	if(inputtext.value.match(alphaExp)){
+		return true;
+	}else{
+		document.getElementById('p5').innerText = alertMsg; //this segment displays the validation rule for address
+		inputtext.focus();
+		return false;
+	}
 }
 
 // Function that checks whether the input characters are restricted according to defined by user.
 
 function lengthDefine(inputtext, min, max){
-var uInput = inputtext.value;
-if(uInput.length >= min && uInput.length <= max){
-	return true;
-}else{
-	
-	document.getElementById('p2').innerText = "* Please enter between " +min+ " and " +max+ " characters *"; //this segment displays the validation rule for username
-	inputtext.focus();
-	return false;
-}
+	var uInput = inputtext.value;
+	if(uInput.length >= min && uInput.length <= max){
+		return true;
+	}else{
+		
+		document.getElementById('p2').innerText = "* Please enter between " +min+ " and " +max+ " characters *"; //this segment displays the validation rule for username
+		inputtext.focus();
+		return false;
+	}
 }
 
 // Function that checks whether a option is selected from the selector and if it's not it displays an alert message.
 
 function trueSelection(inputtext, alertMsg){
-if(inputtext.value == "Please Choose"){
-	document.getElementById('p4').innerText = alertMsg; //this segment displays the validation rule for selection
-	inputtext.focus();
-	return false;
-}else{
-	return true;
-}
+	if(inputtext.value == "Please Choose"){
+		document.getElementById('p4').innerText = alertMsg; //this segment displays the validation rule for selection
+		inputtext.focus();
+		return false;
+	}else{
+		return true;
+	}
 }
 
 // Function that checks whether an user entered valid email address or not and displays alert message on wrong email address format.
 
 function emailValidation(inputtext, alertMsg){
-var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
-if(inputtext.value.match(emailExp)){
-	return true;
-}else{
-	document.getElementById('p3').innerText = alertMsg; //this segment displays the validation rule for email
-	inputtext.focus();
-	return false;
+	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if(inputtext.value.match(emailExp)){
+		return true;
+	}else{
+		document.getElementById('p3').innerText = alertMsg; //this segment displays the validation rule for email
+		inputtext.focus();
+		return false;
+	}
 }
-}
-*/
