@@ -18,11 +18,12 @@
 	border-color:#512D1E;
 }
 
-.form-control:not(:focus):invalid{
-	/* background-color:#FFD9D9; */
+.has-error{
+	background-color:#FFD9D9;
 }
 
-.form-control:not(:focus):valid{
+.has-sucess{
 	background-color:#D9FFD9;
 }
 
+/*Also can use has-feedback to show checkmark, X or warning sign at the end of input controls*/
