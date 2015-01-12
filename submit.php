@@ -11,7 +11,7 @@ if(isset($_POST['send'])){
 
 	$headers = "From: webmaster@floridalambdas.com\r\n";
 	$headers .= "Content-Type: text/plain; charset= UTF-8\r\n";
-	$headers .= "CC: info@floridalambdas.com";
+	//$headers .= "CC: info@floridalambdas.com";
 
 	//echo $message;
 	$success = mail($to,$subject,$body,$headers,'-fsectoronevicepresident@gmail.com');
