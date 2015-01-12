@@ -9,12 +9,12 @@ if(isset($_POST['send'])){
 	$message .= 'Message: ' . $_POST['message'];
 
 
-	$headers = "From: webmaster@floridalambdas.com\r\n";
+	$headers = "From: FLS1 website\r\n";
 	$headers .= "Content-Type: text/plain; charset= UTF-8\r\n";
 	//$headers .= "CC: info@floridalambdas.com";
 
 	//echo $message;
-	$success = mail($to,$subject,$body,$headers,'-fsectoronevicepresident@gmail.com');
+	$success = mail($to,$subject,$message,$headers,'-fsectoronevicepresident@gmail.com');
 }
 
 ?>
