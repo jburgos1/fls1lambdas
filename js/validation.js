@@ -14,7 +14,7 @@ $(document).ready(function(){
     if(!supports.required) {}
     if(!supports.placeholder) {}
 
- }
+ });
 
 //Validation of all inputs
 function Validation(){
@@ -35,14 +35,14 @@ function Validation(){
     	}
     }
     return false;
-});
+}
 
 function isName(name, min, max, error){
 	var nameExpression = /^[a-zA-Z ]{2,30}$/;
 
-	if(name.length >= min && name.length <= max)){
+	if(name.length >= min && name.length <= max){
 		return true;
-	}else if(name.value.match(nameExpression){
+	}else if(name.value.match(nameExpression)){
 		return true;
 	}else{
 		errorSpan.innerHTML = error;
@@ -62,7 +62,7 @@ function isEmail(email, error){
 		email.focus();
 		email.style.border= "1px solid red";
 	}
-};
+}
 
 function isPhone(phone, error){
 	var phoneExpression = /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
