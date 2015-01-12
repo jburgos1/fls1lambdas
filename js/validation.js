@@ -73,7 +73,7 @@ function isPhone(phone, error){
 		//document.getElementById('error').innerHTML = error;
 		errorSpan.innerHTML = error;
 		phone.focus();
-		phone.style.border = "red";
+		phone.style.border = "1px solid red";
 		return false;
 	}
 }
@@ -84,7 +84,7 @@ function minLength(message, min, error){
 	}else{
 		errorSpan.innerHTML = error;
 		message.focus();
-		message.style.border= "red";
+		message.style.border= "1px solid red";
 	}
 }
 
