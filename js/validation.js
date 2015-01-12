@@ -38,7 +38,7 @@ function Validation(){
 });
 
 function isName(name, min, max, error){
-	var nameExpression = /^[a-z ,.'-]+$/i;
+	var nameExpression = /^[a-zA-Z ]{2,30}$/;
 
 	if(name.length >= min && name.length <= max)){
 		return true;
