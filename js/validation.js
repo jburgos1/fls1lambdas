@@ -47,7 +47,7 @@ function isName(name, min, max, error){
 	}else{
 		errorSpan.innerHTML = error;
 		name.focus();
-		name.style.border-color = "red";
+		name.style.border = "1px solid red";
 		return false;
 	}
 }
