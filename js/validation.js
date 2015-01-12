@@ -2,7 +2,8 @@ $(document).ready(function(){
 
 	// Create input element for testing
     var input = document.createElement('input');
-     
+    var errorSpan = document.getElementById('error');
+
     // Create the supports object
     var supports = {};
     supports.autofocus = 'autofocus' in input;
