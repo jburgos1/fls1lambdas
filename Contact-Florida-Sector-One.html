@@ -184,25 +184,25 @@
 					We exist to promote the spirit of brotherhood, to protect the rights of Latino students on their quest for education, to promote culture, and to maximize leadership in our communities. Send us a few lines, and we will gladly provide with your requested information.
 				</p>
 
-					<form onsubmit="return Validation();" method="post" action="submit.php" id="myForm" autocomplete="on" novalidate>
+					<form onsubmit="return Validation();" method="post" action="submit.php" autocomplete="on" novalidate>
 						<div class="row">
 							<div class="col-sm-4">
 								<!-- <label for="name">Name:</label> -->
-								<input class="form-control" type="text" placeholder="Name" id="name" required autocomplete="name" pattern="/^[a-z ,.'-]+$/i" autofocus maxlength="32">
+								<input class="form-control" type="text" placeholder="Name" id="name" required autocomplete="name" pattern="/^[a-z ,.'-]+$/i" autofocus maxlength="32" name="name">
 							</div>
 							<div class="col-sm-4">
 								<!-- <label for="email"></label> -->
-								<input class="form-control" type="text" placeholder="Email" id="email"required autocomplete="email" pattern= "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" maxlength="100">
+								<input class="form-control" type="text" placeholder="Email" id="email"required autocomplete="email" pattern= "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" maxlength="100" name="email">
 							</div>
 							<div class="col-sm-4">
 								<!-- <label for="phone"></label> -->
-								<input class="form-control" type="text" placeholder="Phone" id="phone" required autocomplete="tel" pattern="/^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/" maxlength="16" onclick="return Validation()">
+								<input class="form-control" type="text" placeholder="Phone" id="phone" required autocomplete="tel" pattern="/^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/" maxlength="16" name="phone">
 							</div>
 						</div>
 						<br>
 						<div class="row">
 							<div class="col-sm-12">
-								<textarea placeholder="Type your message here..." class="form-control" rows="9" required maxlength="500"></textarea>
+								<textarea placeholder="Type your message here..." class="form-control" rows="9" required maxlength="500" name="message"></textarea>
 							</div>
 						</div>
 						<br>
