@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['send'])){
 
-	$to = 'FLS1 VP <sectoronevicepresident@gmail.com';
+	$to = 'FLS1 VP <sectoronevicepresident@gmail.com>';
 	$subject = 'Message from floridalambdas.com';
 	$message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
 	$message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
