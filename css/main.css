@@ -388,6 +388,10 @@ img.pull-left { margin-right: 10px; margin-top: 5px;}
 	.bios ul { padding-left: 0;}
 	.bios ul li { padding-bottom: 1%;}
 
+#svp {
+	width: 360px;
+}
+
 /*.positions a {
 	text-decoration: underline;
 }*/
