@@ -1,5 +1,7 @@
 User-agent: *
 
-Sitemap: http://www.floridalambdas.com/sitemap.xml
+Allow: /
 
-disallow: /404-error.html
+Disallow: /404-error.html
+
+Sitemap: http://www.floridalambdas.com/sitemap.xml
