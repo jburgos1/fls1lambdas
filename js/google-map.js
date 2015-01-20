@@ -16,7 +16,7 @@ function init() {
 			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
 		},
 		scaleControl: false,
-		scrollwheel: true,
+		scrollwheel: false,
 		streetViewControl: true,
 		draggable : true,
 		overviewMapControl: false,
